@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+online/static/css/index.css;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    overflow-x: hidden;
+
+}
+nav{
+    width: 100%;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 8px rgba(31, 30, 30, 0.7);
+    z-index: 10;
+}
+.navbar-brand{
+    font-weight: 900;
+    font-family: 'Hachi Maru Pop';
+}
+.nav-link{
+    color: white;
+    font-family: Arial;
+
+}
+.nav-link:hover{
+    border-bottom: 1px solid chartreuse;
+    color:chartreuse;
+}
+.container-fluid img{
+    border-radius: 20px;
+
+}
+#title{
+    width: 100%;
+    height: 10vh;
+
+    background-position: center;
+    background-size: cover;
+}
+.img1 img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 30mm;
+    margin-top: 5px;
+
+}
+@media screen and (max-width:976px) {
+    #title img{
+        width: 80%;
+        left: 14mm;
+
+    }
+}
+#home{
+    background-color: aqua;
+    width: 100%;
+    height: 90vh;
+}
+.text{
+    padding-top: 60px;
+    font-size: medium;
+    color: rgb(201, 5, 5);
+}
+#home{
+    align-items: center;
+    justify-content: center;
+}
+.silde{
+    color: royalblue;
+    animation: number 20s infinite linear;
+    position: relative;
+}
+@keyframes number{
+    0%{
+        left:0%;
+    }
+    100%{
+        left: 70%;
+    }
+}
+@media screen and (max-width:576px) {
+    .silde {
+        top: 20px;
+    }
+    .type{
+        font-size: 9px;
+    }
+
+}
+.grid_containe{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    height: 200vh;
+}
+.grit1{
+    display: grid;
+    width:100%;
+    height:100vhmm;
+    grid-column: span 1;
+    margin-right:20mm;
+}
+
+.grit2 img{
+display:grid;
+width:100%;
+height:120vh;
+}
+
+.grit3{
+  display: grid;
+  grid-column: span 2;
+  height: 50vh;
+  position: relative;
+  top: 15mm;
+
+
+}
+.mobile1{
+    background-color: #f1e4e4;
+
+}
+.mobile{
+    color: rgb(177, 39, 62);
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgb(232, 238, 231);
+    animation: mobile 10s infinite linear;
+    position: relative;
+}
+@keyframes mobile{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 80%;
+    }
+}
+
+form{
+    background-color: white;
+    min-height: 50vh;
+    width: 50%;
+    height:170mm;
+    border-radius: 30px;
+    box-shadow: 5px 5px 6px rgba(0,0,0,.5),-5px -5px 6px rgba(0,0,0,.5);
+    flex-wrap: wrap;
+    padding:20mm;
+    padding-right:25mm;
+    top: 12mm;
+    margin-left:80mm;
+}
+
+form:hover{
+
+}
+form label{
+
+    gap:20mm;
+    font-weight: bold;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: darkblue;
+    position:relative;
+    padding-left:10mm;
+}
+form button{
+    position:relative;
+    width:30mm;
+    height:7mm,
+    padding-right:10mm;
+    background-color:green;
+    font-size:bolder;
+    color:white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 6px rgba(0,0,0,.5),-5px -5px 6px rgba(1,0,0,.5);
+    font-weight: bolder;
+
+    left:50mm;
+    top:10mm;
+}
+form input{
+    border-radius: 10px;
+    outline: none;
+    width: 40mm;
+    height:7mm;
+    border-color:green;
+    position:relative;
+    padding-right:1mm;
+}
+
+form h1{
+    color: #f7f2f7;
+    background-color: rgb(32, 205, 228);
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0,0,0,.5),-5px -5px 6px rgba(0,0,0,.5);
+    animation: book 5s infinite ;
+    width:70%;
+    height:10vh;
+    display:flex;
+    bottom:10mm;
+    position:relative;
+    left:20mm;
+
+}
+@keyframes book{
+    10%{
+        opacity: 0.9;
+        color: chartreuse;
+        background-color: #f70c0c;
+    }
+    80%{
+        opacity: 0.8;
+        color: rgb(230, 9, 9);
+        background-color: #eaee13;
+    }
+}
+#button{
+   width: 20mm;
+   right: 20mm;
+   position: relative;
+   left: 28mm;
+   border-radius: 10px;
+   border-color: rgb(6, 194, 37);
+   font-weight: bold;
+}
+#button a{
+    text-decoration: none;
+    color: crimson;
+}
+#button:hover{
+    background-color:lightgreen;
+    color: rgb(248, 9, 53);
+    border-color: orangered;
+}
+form p{
+    color: #f70c0c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#carouselExampleAutoplaying{
+    display: flex;
+    width: 90%;
+    height: 80%
+    object-fit: cover;
+    box-shadow: 10px 20px 10px rgba(0,0,0,.5);
+    border-radius: 5px;
+    margin-top:20mm;
+    margin-left:15mm;
+
+
+}
+
+.page_text{
+    color: black;
+    position: relative;
+    font-size: larger;
+    margin: 35px;
+}
+.phone span{
+    color: #0444bb;
+}
+.phone{
+    color: rgb(243, 10, 10);
+    animation: phone 15s infinite linear;
+    position: relative;
+    top: 1mm;
+}
+@keyframes phone{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 70%;
+    }
+}
+
+.one{
+    padding-bottom: 55mm;
+}
+.page_text p{
+    bottom: 60mm;
+}
+.contant{
+    color: red;
+}
+@media screen and (max-width:576px) {
+    .page_text{
+        font-size:9px;
+    }
+}
+.type{
+    font-size: large;
+    position: relative;
+    bottom: 5mm;
+    color: blue;
+}
+#About{
+    width: 100%;
+    height: 100vh;
+
+
+
+}
+.row{
+    padding: 150px;
+    padding-bottom: 15mm;
+}
+.container{
+    padding-top: 20px;
+}
+#raj{
+
+    height: 62mm !important;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+#raj button{
+    bottom: 40px;
+}
+#card{
+    box-shadow: 10px 20px 10px rgba(19, 18, 18, 0.5);
+    border: 3px solid rgb(9, 231, 9);
+
+}
+#card:hover{
+    box-shadow: 10px 20px 10px rgba(243, 229, 33, 0.973),-10px -20px 10px rgba(230, 14, 14, 0.5) ;
+    transition: 1s;
+}
+#card-heater img{
+    border-radius: 250px;
+}
+.imgpick{
+    right: 50mm;
+    bottom: 25mm;
+    width: 100mm;
+}
+.imgpick1{
+    right: 50mm;
+    bottom: 25mm;
+    width: 100mm;
+}
+.krish{
+    width: 100mm;
+    bottom: 173mm;
+    left: 172mm;
+}
+.na{
+    color: #f70c0c;
+}
+#but{
+    margin: 10px;
+
+}
+#cont{
+    font-weight: bold;
+}
+.footer{
+    width: 100%;
+    height: 17vh;
+    background-color: black;
+    padding: 20px;
+
+
+}
+.footerbox{
+    background-color: black;
+}
+.footerbox a{
+    padding-left: 50px;
+
+}
+#small{
+padding-left: 26mm;
+}
+.form small{
+    color: red;
+    visibility:hidden;
+}
+.form.error small{
+    visibility: visible;
+}
+.form.success input{
+    border-color: green;
+}
+.form.error input{
+    border-color: red;
+}
+.footerbox a i{
+    align-items: center;
+    justify-content: center;
+    color: #12c712;
+    font-size: 20px;
+    margin-top: 15px;
+    padding-left: 20px;
+
+}
+.footerbox a i:hover{
+    color: rgb(245, 11, 11);
+
+}
+.footerbox a:hover{
+    color: #eaee13;
+}
+.footerbox a{
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Segoe UI';
+}
+.footerbox.copy{
+    color: red;
+}
+@media screen and (max-width:976px){
+    body{
+    *display: block;
+    }
+    .form h1{
+        font-size: medium;
+        width: 40mm;
+        margin-left: 4mm;
+
+    }
+    .pass input{
+
+        width: 30mm;
+    }
+    .pass label{
+        font-size: small;
+        display: block;
+    }
+    .pass{
+        margin-left: 10mm;
+    }
+    #small{
+        font-size: 8px;
+
+    }
+    .grit1{
+        width: 80mm;
+
+    }
+}
+@media screen and (max-width:976px){
+    #button{
+        position: relative;
+        font-size: small;
+    }
+    #card{
+      width: 80mm;
+      height: 75mm;
+      font-size: small;
+      display: inline-block;
+      bottom: 35mm;
+
+    }
+    img{
+        display: inline-block;
+        width: 40mm;
+        height: 30mm;
+
+    }
+    #c{
+        margin-bottom: 10mm;
+    }
+    .footer{
+        font-size: smaller;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+    #map iframe{
+      padding-right: 20mm;
+        width: 90mm;
+
+    }
+    #navbarSupportedContent{
+        height: 15vh;
+    }
+}
